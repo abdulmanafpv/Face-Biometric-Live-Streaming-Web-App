@@ -6,6 +6,11 @@
 This is a Web App used  for detecting peoples Emotion, Gender, Race and Name
 
 ## Images
+![Screenshot (79)](https://user-images.githubusercontent.com/84491967/170695081-29a5385d-4ed8-45f8-be4d-b3f54afb1097.png)
+![Screenshot (80)](https://user-images.githubusercontent.com/84491967/170695183-d9f5e965-3e24-408e-b66d-8c39a9e1e1df.png)
+![Screenshot (81)](https://user-images.githubusercontent.com/84491967/170695274-de0e7a9d-cf2a-41e9-9202-aa899b3ded96.png)
+![Screenshot (82)](https://user-images.githubusercontent.com/84491967/170695424-5148f116-2f08-46be-abaf-f0205387f044.png)
+
 
 ## Objective
 
