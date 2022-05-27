@@ -3,7 +3,7 @@
 
 ## About
 
-This is a Web App used  for detecting peoples Emotion, Gender, Race and Name
+This is a Web App used  for detecting peoples Emotion, Gender, Race and Name. So this Web App helps very well for catching thiefs and criminal peoples
 
 ## Images
 ![Screenshot (79)](https://user-images.githubusercontent.com/84491967/170695081-29a5385d-4ed8-45f8-be4d-b3f54afb1097.png)
