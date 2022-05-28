@@ -34,6 +34,11 @@ For creating this Web APP I used:
 
 1. DeepFace
 
+## Features of this Web App.
+1. Monitoring Peoples Emotion, Age and Name
+2. We can  Monitor specific peoples, this help to catch theifs and criminals
+3. We can take unknown peoples photos.
+
 ## Tools Used
 
 1. Python
