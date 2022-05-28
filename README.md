@@ -38,7 +38,7 @@ For creating this Web APP I used:
 ## Features of this Web App.
 1. Monitoring Peoples Emotion, Age and Name
 2. We can  Monitor specific peoples, this help to catch theifs and criminals
-3. We can take unknown peoples photos.
+3. We can take unknown peoples photos for monitoring future purposes
 
 ## Tools Used
 
