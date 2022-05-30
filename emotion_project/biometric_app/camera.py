@@ -13,7 +13,9 @@ from .models import unreg
 
 import numpy as np
 from biometric_app.data import main
-from biometric_app.data import lst,check_listing,check_main
+from biometric_app.data import lst,check_listing,check_main,check_one,check_main_one
+from biometric_app.data import check_two, check_main_two, check_three, check_main_three, check_four, check_main_four
+from biometric_app.data import check_five, check_main_five
 from biometric_app import views
 import face_recognition
 from django.conf import settings
@@ -297,6 +299,66 @@ class VideoCamera(object):
             cv2.imwrite(s2, frame)
             check_listing()
             check_main()
+
+        elif name(out) == views.check_one():
+            now = datetime.datetime.today()
+            pht = "detected{}.jpg".format(str(now).replace(":", ''))
+            # p=os.path.sep.join(['biometric_app/image', "detected{}.jpg".format(str(now).replace(":", ''))])
+            # p=os.path.sep.join(['biometric_app/image', pht])
+            s1 = os.path.sep.join(['biometric_app/one', pht])
+            s2 = os.path.sep.join(['media/biometric_app/one', pht])
+            cv2.imwrite(s1, frame)
+            cv2.imwrite(s2, frame)
+            check_one()
+            check_main_one()
+
+        elif name(out) == views.check_two():
+            now = datetime.datetime.today()
+            pht = "detected{}.jpg".format(str(now).replace(":", ''))
+            # p=os.path.sep.join(['biometric_app/image', "detected{}.jpg".format(str(now).replace(":", ''))])
+            # p=os.path.sep.join(['biometric_app/image', pht])
+            s1 = os.path.sep.join(['biometric_app/two', pht])
+            s2 = os.path.sep.join(['media/biometric_app/two', pht])
+            cv2.imwrite(s1, frame)
+            cv2.imwrite(s2, frame)
+            check_two()
+            check_main_two()
+
+        elif name(out) == views.check_three():
+            now = datetime.datetime.today()
+            pht = "detected{}.jpg".format(str(now).replace(":", ''))
+            # p=os.path.sep.join(['biometric_app/image', "detected{}.jpg".format(str(now).replace(":", ''))])
+            # p=os.path.sep.join(['biometric_app/image', pht])
+            s1 = os.path.sep.join(['biometric_app/three', pht])
+            s2 = os.path.sep.join(['media/biometric_app/three', pht])
+            cv2.imwrite(s1, frame)
+            cv2.imwrite(s2, frame)
+            check_three()
+            check_main_three()
+
+        elif name(out) == views.check_four():
+            now = datetime.datetime.today()
+            pht = "detected{}.jpg".format(str(now).replace(":", ''))
+            # p=os.path.sep.join(['biometric_app/image', "detected{}.jpg".format(str(now).replace(":", ''))])
+            # p=os.path.sep.join(['biometric_app/image', pht])
+            s4 = os.path.sep.join(['biometric_app/four', pht])
+            s5 = os.path.sep.join(['media/biometric_app/four', pht])
+            cv2.imwrite(s4, frame)
+            cv2.imwrite(s5, frame)
+            check_four()
+            check_main_four()
+
+        elif name(out) == views.check_five():
+            now = datetime.datetime.today()
+            pht = "detected{}.jpg".format(str(now).replace(":", ''))
+            # p=os.path.sep.join(['biometric_app/image', "detected{}.jpg".format(str(now).replace(":", ''))])
+            # p=os.path.sep.join(['biometric_app/image', pht])
+            s6 = os.path.sep.join(['biometric_app/five', pht])
+            s7 = os.path.sep.join(['media/biometric_app/five', pht])
+            cv2.imwrite(s6, frame)
+            cv2.imwrite(s7, frame)
+            check_five()
+            check_main_five()
 
 
 

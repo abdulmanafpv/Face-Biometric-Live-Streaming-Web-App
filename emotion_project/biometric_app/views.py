@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import StreamingHttpResponse
 from biometric_app.camera import VideoCamera
 from biometric_app.camera import unknowncam
-from .models import Employee, Detected, unreg, Checking
+from .models import Employee, Detected, unreg, Checking, Checking_One, Checking_Two, Checking_Three, Checking_Four, Checking_Five
 from .forms import EmployeeForm
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
@@ -158,3 +158,117 @@ def check_list():
 def uncheck(request):
 	result = Checking.objects.all().order_by('-id')
 	return render(request, 'checking_people.html', {'result': result})
+
+one_lst=['']
+def checking_one(request):
+	if request.method == 'POST':
+		obj = request.POST.get('q')
+		one_lst.append(obj)
+		print(obj)
+		print(one_lst[-1])
+		# for i in checking_people:
+		# 	print(i)
+
+	return HttpResponseRedirect(reverse('index'))
+
+def check_one():
+	name= one_lst[-1]
+	# for i in checking_people:
+	# 	return i
+
+	return name
+
+def uncheck_one(request):
+	result = Checking_One.objects.all().order_by('-id')
+	return render(request, 'one.html', {'result': result})
+
+
+two_lst=['']
+def checking_two(request):
+	if request.method=='POST':
+		obj=request.POST.get('q')
+		two_lst.append(obj)
+		print(obj)
+		print(two_lst[-1])
+
+	return HttpResponseRedirect(reverse('index'))
+
+
+def check_two():
+	name= two_lst[-1]
+	# for i in checking_people:
+	# 	return i
+
+	return name
+
+def uncheck_two(request):
+	result = Checking_Two.objects.all().order_by('-id')
+	return render(request, 'two.html', {'result': result})
+
+
+three_lst=['']
+def checking_three(request):
+	if request.method=='POST':
+		obj=request.POST.get('q')
+		three_lst.append(obj)
+		print(obj)
+		print(three_lst[-1])
+	return HttpResponseRedirect(reverse('index'))
+
+
+def check_three():
+	name= three_lst[-1]
+	# for i in checking_people:
+	# 	return i
+
+	return name
+
+def uncheck_three(request):
+	result = Checking_Three.objects.all().order_by('-id')
+	return render(request, 'three.html', {'result': result})
+
+
+
+four_lst=['']
+def checking_four(request):
+	if request.method=='POST':
+		obj=request.POST.get('q')
+		four_lst.append(obj)
+		print(obj)
+		print(four_lst[-1])
+	return HttpResponseRedirect(reverse('index'))
+
+def check_four():
+	name= four_lst[-1]
+	# for i in checking_people:
+	# 	return i
+
+	return name
+
+def uncheck_four(request):
+	result = Checking_Four.objects.all().order_by('-id')
+	return render(request, 'four.html', {'result': result})
+
+
+five_lst=['']
+def checking_five(request):
+	if request.method=='POST':
+		obj=request.POST.get('q')
+		five_lst.append(obj)
+		print(obj)
+		print(five_lst[-1])
+	return HttpResponseRedirect(reverse('index'))
+
+
+def check_five():
+	name= five_lst[-1]
+	return name
+
+def uncheck_five(request):
+	result = Checking_Five.objects.all().order_by('-id')
+	return render(request, 'four.html', {'result': result})
+
+def check_search(request):
+	return render(request, 'check.html')
+
+

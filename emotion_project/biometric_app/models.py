@@ -65,3 +65,28 @@ class unreg(models.Model):
 class Checking(models.Model):
 	image=models.ImageField(upload_to='biometric_app/check', blank=True, null=True)
 	date_time=models.DateTimeField(auto_now_add=True, blank=True, null=True)
+
+
+class Checking_One(models.Model):
+	image=models.ImageField(upload_to='biometric_app/one', blank=True, null=True)
+	date_time=models.DateTimeField(auto_now_add=True, blank=True, null=True)
+
+
+class Checking_Two(models.Model):
+	image=models.ImageField(upload_to='biometric_app/two', blank=True, null=True)
+	date_time=models.DateTimeField(auto_now_add=True, blank=True, null=True)
+
+
+class Checking_Three(models.Model):
+	image=models.ImageField(upload_to='biometric_app/three', blank=True, null=True)
+	date_time=models.DateTimeField(auto_now_add=True, blank=True, null=True)
+
+
+class Checking_Four(models.Model):
+	image=models.ImageField(upload_to='biometric_app/four', blank=True, null=True)
+	date_time=models.DateTimeField(auto_now_add=True, blank=True, null=True)
+
+
+class Checking_Five(models.Model):
+	image=models.ImageField(upload_to='biometric_app/five', blank=True, null=True)
+	date_time=models.DateTimeField(auto_now_add=True, blank=True, null=True)

@@ -3,7 +3,7 @@ import os
 import cv2
 import  sys
 from PIL import Image
-from .models import  unreg,Checking
+from .models import  unreg,Checking, Checking_One, Checking_Two, Checking_Three, Checking_Four, Checking_Five
 import glob
 import shutil
 import os
@@ -78,7 +78,7 @@ def main():
 
 
 check_path= 'biometric_app/check'
-chck_list=[]
+chck_list=['']
 def check_listing():
     for image in glob.iglob(f'{check_path}/*'):
         chck_list.append(image)
@@ -88,6 +88,65 @@ def check_main():
     obj2= Checking.objects.create(image=photo)
     obj2.save()
 
+
+check_one_path= 'biometric_app/one'
+chck_one=['']
+
+def check_one():
+    for image in glob.iglob(f'{check_one_path}/*'):
+        chck_one.append(image)
+
+
+def check_main_one():
+    photo=chck_one[-1]
+    obj= Checking_One.objects.create(image=photo)
+    obj.save()
+
+check_two_path= 'biometric_app/two'
+chck_two=['']
+
+def check_two():
+    for image in glob.iglob(f'{check_two_path}/*'):
+        chck_two.append(image)
+
+def check_main_two():
+    photo=chck_two[-1]
+    obj= Checking_Two.objects.create(image=photo)
+    obj.save()
+
+check_three_path= 'biometric_app/three'
+chck_three=['']
+
+def check_three():
+    for image in glob.iglob(f'{check_three_path}/*'):
+        chck_three.append(image)
+
+def check_main_three():
+    photo=chck_three[-1]
+    obj= Checking_Three.objects.create(image=photo)
+    obj.save()
+
+check_four_path= 'biometric_app/four'
+chck_four=['']
+def check_four():
+    for image in glob.iglob(f'{check_four_path}/*'):
+        chck_four.append(image)
+
+def check_main_four():
+    photo=chck_four[-1]
+    obj= Checking_Four.objects.create(image=photo)
+    obj.save()
+
+check_five_path= 'biometric_app/five'
+chck_five=['']
+def check_five():
+    for image in glob.iglob(f'{check_five_path}/*'):
+        chck_five.append(image)
+
+def check_main_five():
+    photo=chck_five[-1]
+    obj= Checking_Five.objects.create(image=photo)
+    obj.save()
 
 
 
