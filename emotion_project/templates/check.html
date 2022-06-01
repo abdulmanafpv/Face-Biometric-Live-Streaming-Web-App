@@ -215,16 +215,17 @@ display:flex;
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
       <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}"><i class="fa fas fa-duotone fa-house-user"></i><span class="ms-2">HOME</span></a></li>
           <li class="nav-item">
-                <a class="nav-link text-white" href="{% url 'index' %}"><i class="fa fas fa-duotone fa-house-user"></i><span class="ms-2">HOME</span></a></li>
-          <li class="nav-item">
-                <a class="nav-link text-white" href="{% url 'unregisterd' %}"><i class="fa fas fa-duotone fa-house-user"></i><span class="ms-2">UNKNOWN</span></a></li>
+                <a class="nav-link" href="{% url 'unregisterd' %}"><i class="fa fas fa-thin fa-circle-user"></i><span class="ms-2">UNKNOWN</span></a></li>
            <li class="nav-item">
-                <a class="nav-link text-white" href="{% url 'registerd_people' %}"><i class="fa fas fa-duotone fa-house-user"></i><span class="ms-2">REGISTERD </span></a></li>
+                <a class="nav-link" href="{% url 'registerd_people' %}"> <i class="fas fa fa-thin fa-address-card"></i><span class="ms-2">REGISTERD </span></a></li>
+                     <li class="nav-item">
 
-                              <li class="nav-item">
-                <a class="nav-link" href="{% url 'check_search' %}"><i class="fa fas fa-duotone fa-house-user"></i><span class="ms-2">CHECKING PEOPLE </span></a></li>
-
+                        <a class="nav-link"  href="{% url 'check_search' %}"><i class="fa fas fa-thin fa-book-reader"></i><span class="ms-2">CHECKING PEOPLE </span>
+                </a>
+                    </li>
 
 
 
